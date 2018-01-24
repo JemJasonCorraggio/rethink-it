@@ -7,7 +7,7 @@
 import "isomorphic-fetch";
 
 export const signUp = (username, password, triggers, thought, rethought) => dispatch => {
-    const url = `https://learncoding-jemcorraggio.c9users.io/sign-up`;
+    const url = `https://rethink-it.herokuapp.com/sign-up`;
     return fetch(url, {method: "POST", body: JSON.stringify({username, password, triggers, thought, rethought}), headers: {"Content-Type": "application/json"}})
     .then(res=>res.json())
     .then(res => {
@@ -21,7 +21,7 @@ export const signUp = (username, password, triggers, thought, rethought) => disp
     });
 };
 export const login = (username, password) => dispatch => {
-    const url = `https://learncoding-jemcorraggio.c9users.io/login`;
+    const url = `https://rethink-it.herokuapp.com/login`;
     return fetch(url, {method: "POST", 
                         body: JSON.stringify({username, password}), 
                         credentials: "same-origin",
@@ -39,7 +39,7 @@ export const login = (username, password) => dispatch => {
     });
 };
 export const update = (username, triggers, thought, rethought, index) => dispatch => {
-    const url = `https://learncoding-jemcorraggio.c9users.io/update`;
+    const url = `https://rethink-it.herokuapp.com/update`;
     var token = localStorage.getItem("token");
     return fetch(url, {method: "PUT", 
                         body: JSON.stringify({username, triggers, thought, rethought, index}), 
