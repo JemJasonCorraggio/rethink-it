@@ -12,3 +12,10 @@ script:
 - npm run build:server:production
 - npm run build:client:production
 - npm test
+deploy:
+  provider: heroku
+  api_key:
+    secure: xGLmU6ioIC7SvWTCZpkRl7lT17r4PRwKSZfzyk3EqPkPiPGwie3J7381jPO+2LmVgBfUucEZluWEFHXDhZBe7qbWOHeizS3ffZQ722n/Nts+K3D8E1t9hswQeY52ncxu10t0Lih+1plwcjK1trLAjSvsRyxMzoiS7FqgdzagymS/9g/hLCpCZrG3/5we1WR4CWOhwSBIMnmw2oeJs1E3SeUW4aw+lJs7+AtCIu9zELKAErrorvJMSTenNA46X9b3cLd3ecANbEsInOFB2rfsjtCj5p1vfPdmVTKksSn4BvYR1N+Pm+rLsb3V+qRLF9YhPi6/gL2Kz1Mov/iOX6c3p5AARzGZBj2ikgf+shW/6VdaPdl8PIX55eoWPUNGbgosQAKi/Skid652wVtqW6m1yCNmPwTiA/NoibMY2dr0gGv8SfadizqW3Fch2B0XlICqyonqWGAjfmpuEFg96nvye8Q4Kgdj8uxHNsBqgY7UatYkvqpLZfJxdx9A/RSeEUeHk1AoUWd1EvYgTrNgQNOi4XG/Wv9bnvKRFxWEnz5A9meDm3nw8Gx8sD0Gq4vsjcJbtAGT8Joeoy4Ab58HkQeTH/VgeutlrxAZrvfSevElOJVneTJJ2m19RCaQE7aa/nQsK8ji5BLLe6XsTAlC8nd1djxKXGZ5C0WqVA90JEwN3No=
+  app: rethink-it
+  on:
+    repo: ladyjem/rethink-it
