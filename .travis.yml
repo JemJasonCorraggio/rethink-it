@@ -14,12 +14,8 @@ script:
 - npm test
 deploy:
   provider: heroku
-<<<<<<<<< saved version
   api_key:
     secure: aIwSvJFkzsugZjiXlilC5sw8aRy475Hx4F8pJVHFROSNmysPRqctguWzE8FXqt7fDEOC2TSjeVqV38LWlfrpF+4+SGB0M88/KRAopciD3ACQTxKiheA9TtqhVPr2ncgxKgAKZdtZSFVvcv+wwlLpZp96pVG9h4Fp4+nMdBqiTiNPY/piNjFnKj45G7kIFlOCf9RYkOzp7rY7OuCHl8A7y0JtzltnwToLujq0ijF3JMaelQhYUXh7FJVphaxTAOg25WZ9l5k0ntQVofkeHkbban0lrFNL28MmVIofA6iKMOuFPXMqM1MIEy5UeN5aXI3q4Lsgvo1FpJcnLJn3e+wJ8uTwUcSpPnxrMzNxfUzJ5/wMKBrCgcmbpMZsPfDXOkV7Tmi7U+Et/OQWAAzValzXULHVBPWHsBAi/7AAqB+Z32VHktO808xXIUHt0UR2aG8aRJeOjlnzE28o+u40mYMb0VOZ/2CLthgOnIM8mdtN2SieNGKICu5THWSOFTY2R3JDwsTmIWMSp6SK0s9NV58R09VB+bjlLN3yf3VcZ4EcOvExaE9NO4jqpvJmvkNNdFZuzJzaVeDlqJUba+d52wWrEVdVgZj2u9opduYuUhcU58CcK+MEvW9l9kDuGwzz/eqnUqLDGOthHeNaktS6hnvKbyfyysHOU6acL4QYDBm2VbM=
-=========
-
->>>>>>>>> local version
   app: rethink-it
   on:
     repo: ladyjem/rethink-it
