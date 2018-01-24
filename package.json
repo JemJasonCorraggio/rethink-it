@@ -8,7 +8,7 @@
   "scripts": {
     "start": "[ \"$NODE_ENV\" = \"production\" ] && npm run serve:server:production || npm run serve:server:dev",
     "dev": "run-p watch serve:server:dev",
-    "test": "mocha --recursive",
+    "test": "mocha --recursive --require babel-polyfill --compilers js:babel-register",
     "repl": "babel-node",
     "build": "run-s build:*",
     "clean": "rm -rf build",
@@ -81,7 +81,26 @@
     "webpack": "^1.13.1"
   },
   "dependencies": {
-    "express": "^4.14.0",
-    "isomorphic-fetch": "^2.2.1"
+    "babel-cli": "^6.26.0",
+    "babel-preset-node6": "^11.0.0",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "faker": "^4.1.0",
+    "http-server": "^0.11.1",
+    "isomorphic-fetch": "^2.2.1",
+    "jsonwebtoken": "^8.1.0",
+    "mongoose": "^4.13.7",
+    "morgan": "^1.9.0",
+    "passport": "^0.4.0",
+    "passport-http": "^0.3.0",
+    "passport-jwt": "^3.0.1",
+    "react": "^15.4.2",
+    "react-addons-test-utils": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "thunk": "0.0.1"
   }
 }
