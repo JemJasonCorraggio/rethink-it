@@ -162,9 +162,9 @@ describe('Sever', function() {
                 .send(update)
                 .then(res => {
                     res.should.have.status(200);
-                    res.body.data.thoughts[0].triggers.should.equal(update.triggers);
-                    res.body.data.thoughts[0].thought.should.equal(update.thought);
-                    res.body.data.thoughts[0].rethought.should.equal(update.rethought);
+                    res.body.data[0].triggers.should.equal(update.triggers);
+                    res.body.data[0].thought.should.equal(update.thought);
+                    res.body.data[0].rethought.should.equal(update.rethought);
                 })
                 .catch(e => console.log(e, '!!!'));
             })
