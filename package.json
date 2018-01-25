@@ -5,6 +5,7 @@
   "main": "index.js",
   "main:server": "server/index.js",
   "main:client": "client/js/index.js",
+  "engines": { "node" : "^6.11.2" },
   "scripts": {
     "start": "[ \"$NODE_ENV\" = \"production\" ] && npm run serve:server:production || npm run serve:server:dev",
     "dev": "run-p watch serve:server:dev",
@@ -81,7 +82,6 @@
     "webpack": "^1.13.1"
   },
   "dependencies": {
-    "babel": "^6.23.0",
     "babel-cli": "^6.26.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
